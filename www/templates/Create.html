@@ -1,0 +1,35 @@
+<ion-modal-view>
+  <ion-header-bar class="bar bar-header bar-calm">
+    <h1 class="title">Create</h1>
+    <div class="buttons">
+      <button class="button button-clear" ng-click="closeCreate()">Close</button>
+    </div>
+  </ion-header-bar>
+  <ion-content >
+    <form ng-submit="doCreate()">
+      <div class="list">
+          <div class="list">
+              <label class="item item-input item-stacked-label">
+                <span class="input-label">Username</span>
+                <input type="text" placeholder="GhoSt" ng-model="LoginData.username">
+              </label>
+              <label class="item item-input item-stacked-label">
+                <span class="input-label">Password</span>
+                <input type="password" placeholder="123" ng-model="LoginData.password">
+              </label>
+              <label class="item item-input item-stacked-label">
+                <span class="input-label">Email</span>
+                <input type="text" placeholder="john@suhr.com" ng-model="LoginData.mail">
+              </label>
+              <label class="item item-input item-stacked-label">
+                <span class="input-label">Phone</span>
+                <input type="text" placeholder="+905348722934" ng-model="LoginData.phone">
+              </label>
+            </div>
+        <label class="item">
+          <button class="button button-block button-positive" menu-close type="submit">Sign in</button>
+        </label>
+      </div>
+    </form>
+  </ion-content>
+</ion-modal-view>
